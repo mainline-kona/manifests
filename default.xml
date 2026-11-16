@@ -3,6 +3,22 @@
   <remote name="github"
           fetch="https://github.com/" />
 
+  <!-- Mainline Device Trees & Custom Mainline Repos -->
+  <project path="device/oneplus/kebab_mainline" name="mainline-kona/android_device_oneplus_kebab_mainline" remote="github" revision="main" />
+  <project path="device/mainline/qcom-common" name="mainline-kona/android_device_mainline_qcom-common" remote="github" revision="lineage-24.0" />
+  <project path="device/mainline/common" name="mainline-kona/android_device_mainline_common" remote="github" revision="lineage-24.0" />
+  <project path="external/linux-firmware-mainline" name="mainline-kona/android_external_linux-firmware-mainline" remote="github" revision="lineage-24.0" />
+  <project path="hardware/mainline/qcom" name="mainline-kona/android_hardware_mainline_qcom" remote="github" revision="lineage-24.0" />
+
+  <!-- Custom Fixes / Patched AOSP & Lineage Repositories -->
+  <project path="bootable/recovery" name="mainline-kona/android_bootable_recovery" remote="github" revision="seventeen" />
+  <project path="hardware/qcom-caf/bootctrl" name="mainline-kona/android_hardware_qcom_bootctrl" remote="github" revision="lineage-24.0-caf" />
+  <project path="vendor/lineage" name="mainline-kona/android_vendor_lineage" remote="github" revision="seventeen" />
+  <project path="vendor/custom" name="mainline-kona/android_vendor_custom" remote="github" revision="seventeen" />
+  <project path="external/XMP-Toolkit-SDK" name="mainline-kona/android_external_XMP-Toolkit-SDK" remote="github" revision="seventeen" />
+  <project path="external/google-highway" name="mainline-kona/android_external_google-highway" remote="github" revision="seventeen" />
+  <project path="external/skia" name="mainline-kona/android_external_skia" remote="github" revision="seventeen" />
+
   <!-- External Upstream Components -->
   <project path="external/alsa-lib" name="LineageOS/android_external_alsa-lib" remote="github" revision="lineage-24.0" />
   <project path="external/alsa-ucm-conf" name="LineageOS/android_external_alsa-ucm-conf" remote="github" revision="lineage-24.0" />
