@@ -44,6 +44,9 @@
   <remove-project name="LineageOS/android_packages_modules_ImsMedia" />
   <project path="packages/modules/ImsMedia" name="android_packages_modules_ImsMedia" groups="pdk" remote="MainlineKona" revision="lineage-24.0" />
 
+  <remove-project name="LineageOS/android_external_v4l2_codec2" />
+  <project path="external/v4l2_codec2" name="android_external_v4l2_codec2" groups="pdk" remote="MainlineKona" revision="lineage-24.0" />
+
   <!-- Upstream Mainline Common (me-cafebabe-aosp-mainline) -->
   <project path="device/mainline/common" name="android_device_mainline_common" groups="mainline" remote="Mainline" />
   <project path="vendor/mainline" name="android_vendor_mainline" groups="mainline" remote="Mainline" />
