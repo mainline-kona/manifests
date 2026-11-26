@@ -12,10 +12,14 @@
   <remote name="zenzer0s"
           fetch="https://github.com/zenzer0s" />
 
+  <remote name="OplusKona"
+          fetch="https://github.com/oplus-kona" />
+
   <!-- OnePlus 8T (kebab) Mainline Device, Firmware, RIL, and Kernel -->
   <project path="device/oneplus/kebab_mainline" name="android_device_oneplus_kebab_mainline" groups="mainline,kebab" remote="MainlineKona" revision="main" />
   <project path="device/oneplus/kebab_mainline-firmware" name="android_device_oneplus_kebab_mainline-firmware" groups="mainline,kebab" remote="MainlineKona" revision="main" />
   <project path="hardware/mainline/kona-ril" name="android_hardware_mainline_kona-ril" groups="mainline,kebab" remote="MainlineKona" revision="empty" />
+  <project path="hardware/oplus" name="android_hardware_oplus" groups="mainline,kebab" remote="OplusKona" revision="aosp-17" />
   <project path="kernel/oneplus/sm8250" name="mainline-kona" groups="mainline,kebab" remote="zenzer0s" revision="android17-6.18-lts-8t" />
 
   <!-- Patched Mainline & LineageOS Repositories (mainline-kona org) -->
