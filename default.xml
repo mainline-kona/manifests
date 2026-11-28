@@ -21,6 +21,7 @@
   <project path="hardware/mainline/kona-ril" name="android_hardware_mainline_kona-ril" groups="mainline,kebab" remote="MainlineKona" revision="empty" />
   <project path="hardware/oplus" name="android_hardware_oplus" groups="mainline,kebab" remote="OplusKona" revision="aosp-17" />
   <project path="kernel/oneplus/sm8250" name="mainline-kona" groups="mainline,kebab" remote="zenzer0s" revision="android17-6.18-lts-8t" />
+  <project path="vendor/qcom/opensource/camera-kernel" name="android_vendor_qcom_opensource_camera-kernel" groups="mainline,kebab" remote="MainlineKona" revision="kebab-6.18" />
 
   <!-- Patched Mainline & LineageOS Repositories (mainline-kona org) -->
   <project path="device/mainline/qcom-common" name="android_device_mainline_qcom-common" groups="mainline,mainline_device_qcom" remote="MainlineKona" revision="lineage-24.0" />
@@ -46,6 +47,15 @@
 
   <remove-project name="LineageOS/android_external_v4l2_codec2" />
   <project path="external/v4l2_codec2" name="android_external_v4l2_codec2" groups="pdk" remote="MainlineKona" revision="lineage-24.0" />
+
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <project path="hardware/qcom-caf/sm8850/display/hal" name="android_hardware_qcom_display" groups="qcom" remote="MainlineKona" revision="lineage-24.0-caf-sm8850" />
+
+  <remove-project name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,qssi" remote="MainlineKona" revision="lineage-24.0" />
+
+  <remove-project name="LineageOS/android_vendor_lineage" />
+  <project path="vendor/lineage" name="android_vendor_lineage" remote="MainlineKona" revision="lineage-24.0" />
 
   <!-- Upstream Mainline Common (me-cafebabe-aosp-mainline) -->
   <project path="device/mainline/common" name="android_device_mainline_common" groups="mainline" remote="Mainline" />
